@@ -10,6 +10,7 @@ const ProductItem = ({
   const [isExpanded, setIsExpanded] = useState(false);
 
   const onToggleDescription = () => {
+    //setting toggle status. this keeps as a local state
     setIsExpanded(!isExpanded);
   };
 

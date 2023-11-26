@@ -1,6 +1,5 @@
 import React from "react";
 import { FaCartPlus } from "react-icons/fa";
-import { IconContext } from "react-icons";
 
 const Navbar = (props) => {
   return (

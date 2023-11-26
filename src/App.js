@@ -7,6 +7,7 @@ import Products from "./components/Products";
 const App = () => {
   const [itemCount, setItemCount] = useState(0);
 
+  // This function will be responsible for add and remove item from the cart
   const onHandleAddItemsToCart = (action) => {
     switch (action) {
       case "add":
@@ -14,6 +15,7 @@ const App = () => {
         break;
       case "remove":
         {
+          // only the itemCount greater than 0 , this allows to modify the count
           if (itemCount > 0) {
             setItemCount((prevCount) => prevCount - 1);
           }
