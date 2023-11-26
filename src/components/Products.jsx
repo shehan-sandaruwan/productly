@@ -9,14 +9,15 @@ const Products = ({ onHandleAddItemsToCart }) => {
 
   useEffect(() => {
     const fetchData = async () => {
-      setIsLoading(true);
-      const response = await fetchProductData();
-      setIsLoading(false);
+      try {
+        setIsLoading(true);
+        const productionData = await fetchProductData();
+        setIsLoading(false);
 
-      if (response.status === "success") {
-        modelProductData(response.data);
-      } else {
-        alert(response.data);
+        modelProductData(productionData);
+      } catch (error) {
+        alert(error.message);
+        setIsLoading(false);
       }
     };
 
