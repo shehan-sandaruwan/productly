@@ -18,8 +18,31 @@ To get a local copy up and running, follow these simple steps:
    ```bash
    git clone https://github.com/shehan-sandaruwan/productly.git
 
+   ```
+
+2. **Navigate to the project directory:**
+
+   ```bash
     cd productly
-    npm install
-    npm start
 
    ```
+
+3. **Install dependencies:**
+
+   ```bash
+
+   npm install
+
+   ```
+
+4. **Running the Application:**
+
+```bash
+
+  npm start
+
+```
+
+```
+
+```
