@@ -55,6 +55,7 @@ const Products = ({ onHandleAddItemsToCart }) => {
           {productData.map((product) => {
             return (
               <ProductItem
+                key={product.id}
                 {...product}
                 onHandleAddItemsToCart={onHandleAddItemsToCart}
               />
