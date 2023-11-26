@@ -15,7 +15,7 @@ const ProductItem = ({
 
   return (
     <div className={`product-item`}>
-      <div className={`product-item-details ${isExpanded ? "expanded" : ""}`}>
+      <div className={`product-item-details`}>
         <div>
           <img
             src={imageUrl}
@@ -33,10 +33,17 @@ const ProductItem = ({
               -{" "}
             </button>
           </div>
-          {isExpanded && <p className="collapsible-content">{description}</p>}
+          {isExpanded && (
+            <p className={`collapsible-content ${isExpanded ? "visible" : ""}`}>
+              {description}
+            </p>
+          )}
         </main>
       </div>
-      <div onClick={onToggleDescription} className="toggle-button">
+      <div
+        onClick={onToggleDescription}
+        className={`toggle-button ${isExpanded ? "expanded" : ""}`}
+      >
         {isExpanded ? (
           <FaChevronUp className="toggle-icon" />
         ) : (
