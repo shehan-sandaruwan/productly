@@ -37,12 +37,8 @@ To get a local copy up and running, follow these simple steps:
 
 4. **Running the Application:**
 
-```bash
+   ```bash
 
-  npm start
+   npm start
 
-```
-
-```
-
-```
+   ```
