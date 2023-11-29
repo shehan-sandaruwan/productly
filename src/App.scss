@@ -106,6 +106,7 @@ body {
 .product-item-details {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 3rem;
   padding: var(--h2);
 }
@@ -193,12 +194,12 @@ body {
 }
 
 p.collapsible-content {
-  display: none;
-  transition: display 0.3s linear 3s;
+  opacity: 0;
+  transition: opacity 0.3s ease-out 0.2s;
 }
 
 p.collapsible-content.visible {
-  display: block;
+  opacity: 1;
 }
 
 @media (max-width: 576px) {

@@ -34,11 +34,9 @@ const ProductItem = ({
               -{" "}
             </button>
           </div>
-          {isExpanded && (
-            <p className={`collapsible-content ${isExpanded ? "visible" : ""}`}>
-              {description}
-            </p>
-          )}
+          <p className={`collapsible-content ${isExpanded ? "visible" : ""}`}>
+            {description}
+          </p>
         </main>
       </div>
       <div
